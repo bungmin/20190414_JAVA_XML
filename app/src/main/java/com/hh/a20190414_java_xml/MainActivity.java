@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.hh.a20190414_java_xml.R;
 
@@ -43,6 +44,12 @@ public class MainActivity extends AppCompatActivity {
 
 
                 conTextView.setText(userInputStr);
+
+
+                Toast.makeText(MainActivity.this, "입력값이 반영", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "두번째 토스트", Toast.LENGTH_SHORT).show();
+
+
 
             }
 

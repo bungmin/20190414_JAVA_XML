@@ -73,9 +73,9 @@ findViewById
             }
 
         });
-K
+
   - onClick 메소뜨를 확이버튼이 눌리면 => 로그로 눌렀다는 사실을 출력.
-WW
+
 
 
 
@@ -88,5 +88,33 @@ WW
  0) 반드시 해당컴포넌트의 변수가 findViewById로 연결되어있음을 확인!
   * 만약 연결되어있지 않다면, 실행시 NullPointerException을 만나게 된다.
 
+  ex1.) inputEdit의 text를 가져오고 싶다 => inputEdt.getText();
+        text를 뽑아 오는 경우, 보통 String 변수를 만들어서 저장하는 게 편리함.
+	    EditText의 getText는 String을 주지 않는다. getText().toString()을 붙이는게 편리함.
+
+		contextText의 글씨색을 가져오고 싶다 => contentText.getTextColor();
 
 
+
+ set
+ 0) 반드시 findViewById가 되어있는지 확인
+ 1) 데이터를 적어넣을 변수 set속성(재료)
+
+ 다른 컴포넌트에서 뽑아서 저장한 String 변수를 재료로 사용하면 편리함
+
+
+
+Toast
+1. 개요
+ - 사용자에게 간단한 알림 메시지를 주고자 할때 사용.
+
+2. 사용법
+ - Toast를 타이핑 => 자동완성메뉴가 2개.(Cretae a new taost) 선택
+ - 1번째료 : 어느 화면에서 띄어질지(context) => 기본값 그대로 엔터
+ - 2번째재료 : 띄우고자하는 말
+ - 3번째재료 : 띄우는 시간.
+ - 마지막에 반드시 show() 붙어 있음을 확인
+
+3. 의미
+ - XML을 거치지 않고, JAVA만을 이용해서 화면에 영향력을 행사
+ - AlertDialog(확인/취소 선택받는 알림창). 날짜, 선택, 시간 선택등은 자바단에서 해결.
