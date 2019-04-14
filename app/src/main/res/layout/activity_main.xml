@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="내용입력후 확인을 누르세요"
+        android:id="@+id/contentTxtView"
         />
 
 
@@ -20,12 +21,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="내용 입력"
+        android:singleLine="true"
+        android:id="@+id/inputEditText"
         />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="입력"
+        android:id="@+id/okBtn"
 
         />
 </LinearLayout>
