@@ -13,5 +13,6 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d("메인-onCreate테스트", "정말실행되나?");
         Log.e("메인-ee  onCreate테스트", "정말실행되나?");
+
     }
 }
